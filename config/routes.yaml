@@ -1,0 +1,15 @@
+# config/routes.yaml
+api_auth_login:
+    path: /api/auth/login
+    controller: App\Controller\AuthController::login
+    methods: [POST]
+
+api_user_register:
+    path: /api/user/register
+    controller: App\Controller\UserController::register
+    methods: [POST]
+
+api_user_list:
+    path: /api/user/list
+    controller: App\Controller\UserController::getUsers
+    methods: [GET]
